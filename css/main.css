@@ -1,0 +1,149 @@
+html {
+    font-family: "Book Antiqua", sans-serif;
+}
+
+header {
+    background-attachment: fixed;
+    /* Parallax effect */
+    background-image: url("../images/housings.jpg");
+    /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;
+    /* Parallax effect */
+    background-repeat: no-repeat;
+    /* Parallax effect */
+    background-size: cover;
+    /* Parallax effect */
+    color: black;
+    height: 500px;
+    /* Parallax effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 1%;
+    width: fit-content;
+    border-radius: 30px;
+    border: 20px solid;
+    border-image: url("../images/Art-Nouveau-Design-13.svg") 30 round;
+    background: url('../images/paper.jpg');
+    height: fit-content;
+    text-align: center;
+}
+
+body {
+    font-size: 18px;
+    display: grid;
+    background: black;
+}
+
+
+body *:focus {
+    border: 10px solid green;
+}
+
+
+
+h2 {
+    font-size: 35px;
+}
+
+nav {
+    font-size: 20px;
+    text-align: center;
+    grid-column: 1/span all;
+    align-self: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #92d1d5;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 0 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    width: vw;
+    row-gap: 15px;
+    background: black;
+}
+
+.content {
+    display: grid;
+    background: #bdaf95;
+    grid-column: 2/span 2;
+    grid-row: 1/span all;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.imgflex {
+    display: flex;
+
+}
+
+img {
+    width: 300px;
+}
+
+#main section {
+    padding-bottom: 40px;
+    background: #dfd5c5;
+    margin: 10px;
+    padding: 5px;
+}
+
+.status,
+.hw1 {
+    grid-column: 1/span all;
+    grid-row: 1/span 1;
+}
+
+.classes,
+.hw2 {
+    grid-column: 1/span all;
+    grid-row-start: 2/span 1;
+}
+
+.hobbys,
+.hw3 {
+    grid-column: 1/span all;
+    grid-row: 3/span 1;
+}
+
+.official,
+.hw4 {
+    grid-column: 1/span all;
+    grid-row: 4/span 1;
+}
+
+footer {
+    color: white;
+    justify-self: center;
+    padding: 10px;
+}
+
+.skip>* {
+    position: absolute;
+    top: -20px;
+    nav-index: 0;
+}
+
+.skip a:focus {
+    position: absolute;
+    top: 0px;   
+}
