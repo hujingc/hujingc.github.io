@@ -33,6 +33,18 @@ h1 {
     text-align: center;
 }
 
+.skip, .skip a{
+    position: absolute;
+    top: -20px;
+    nav-index: 0;
+}
+
+.skip:focus, .skip a:focus {
+    position: absolute;
+    top: 0px;
+    border: 10px solid green;
+}
+
 body {
     font-size: 18px;
     display: grid;
@@ -135,15 +147,4 @@ footer {
     color: white;
     justify-self: center;
     padding: 10px;
-}
-
-.skip>* {
-    position: absolute;
-    top: -20px;
-    nav-index: 0;
-}
-
-.skip a:focus {
-    position: absolute;
-    top: 0px;   
 }
