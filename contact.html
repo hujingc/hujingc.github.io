@@ -8,6 +8,7 @@
         <link rel="stylesheet" href='css/main.css'>
         <title>SI 339 Homework</title>
     </head>
+
     <body>
         <div class="skip"><a href=".container">Skip to Main Content</a></div>
         <header>
@@ -23,9 +24,16 @@
         </nav>
         <div class='container'>
             <div id="main" class='content'>
-
-                <form>Type
-                    <input type="text">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Contact me</legend>
+                        <label for="name">Name</label><input type="text" id="name">
+                        <br />
+                        <label> Email: <input type="email"></label>
+                        <br />
+                        <label> Message <input type='text'></label>
+                        <input type="submit" value="Save!">
+                    </fieldset>
                 </form>
             </div>
         </div>
