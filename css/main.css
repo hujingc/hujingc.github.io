@@ -44,7 +44,7 @@ h1 {
     top: 20px;
     border: 5px solid green;
     background-color: white;
-    padding:5px;
+    padding: 5px;
     z-index: 1;
 }
 
@@ -117,6 +117,7 @@ section img {
     grid-row: 1/span 3;
     border: 8px solid rgb(250, 208, 68);
 }
+
 section {
     display: grid;
     padding-bottom: 40px;
@@ -131,11 +132,6 @@ section {
     grid-column: 2/span 3;
     grid-row: 1/span 3;
     padding-left: 5px;
-}
-iframe {
-    height: 500px;
-    width: 100%;
-    object-fit: fill;
 }
 
 section a {
@@ -156,3 +152,28 @@ footer a {
     text-decoration: none;
 }
 
+.homepage nav ul li:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.gallery nav ul li:nth-child(2) {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.si339 nav ul li:nth-child(3) {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.eecs183 nav ul li:last-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+iframe {
+    height: 500px;
+    width: 100%;
+    object-fit: fill;
+}
