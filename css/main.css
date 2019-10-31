@@ -55,7 +55,7 @@ body {
 }
 
 body *:focus {
-    border: 5px solid green;
+    border: 2px solid green;
 }
 
 h2 {
@@ -67,7 +67,7 @@ nav {
     text-align: center;
     grid-column: 1/span all;
     align-self: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav a {
