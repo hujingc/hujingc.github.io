@@ -228,6 +228,10 @@ iframe {
         padding: 10px;
     }
 
+    .gallery .content {
+        display: inline-block;
+    }
+
     section {
         display: grid;
         padding-bottom: 40px;
