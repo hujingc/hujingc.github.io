@@ -31,6 +31,15 @@ h1 {
     background: url('../images/paper.jpg');
     height: fit-content;
     text-align: center;
+    letter-spacing: .1em;
+    text-shadow:
+        -1px -1px 1px #7f7d7d,
+        -2px 0px 1px #828181,
+        -3px 1px 1px #868585,
+        -4px 2px 1px #8b8a89,
+        -5px 3px 1px #8f8e8d,
+        -6px 4px 1px #949392,
+        -7px 5px 1px #999897;
 }
 
 .skip {
