@@ -55,6 +55,8 @@ h1 {
     background-color: white;
     padding: 5px;
     z-index: 1;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
 }
 
 body {
@@ -322,5 +324,18 @@ iframe {
     section {
         display: block;
         height: fit-content;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .skip {
+        background: white;
+        left: 0;
+        padding: 6px;
+        position: absolute;
+        top: -40px;
+        -webkit-transition: all 0s ease 0s;
+        transition: all 0s ease 0s;
+        z-index: 1;
     }
 }
