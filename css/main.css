@@ -378,7 +378,8 @@ iframe {
         display: block;
         height: fit-content;
     }
-    .flip-card{height: auto;}
+    .flip-card{height: auto;
+    width: 100%}
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
