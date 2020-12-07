@@ -11,7 +11,7 @@
 
 
 
-<title>Library of Congress</title>
+<title>presentation.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -300,35 +300,85 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Library of Congress</h1>
 
 </div>
 
 
+<div id="anthrobio-463-creative-project" class="section level1">
+<h1>ANTHROBIO 463 Creative pRoject</h1>
+<p>author: Jingcong Hu date: 12/07/2020</p>
+</div>
+<div id="what-i-did-in-r" class="section level1">
+<h1>What I did in R</h1>
+<p>Website</p>
+<ul>
+<li>Recreating snippet of Wikipedia page</li>
+<li>No HTML tags at all</li>
+<li>Published to GitHub</li>
+</ul>
 <hr />
-<p><img src="img/1024px-OOjs_UI_icon_language-ltr.svg.png" width="20" alt="language" /> <img src="img/Pencil_edit_icon.jpg" style="float: right;" width="30" alt="edit" /> <img src="img/1200px-Five-pointed_star.svg.png" style="float: right;" width="30" alt="save" /> <img src="img/30px-OOjs_UI_icon_download.svg.png" style="float: right;" width="30" alt="download" /></p>
+<p>This presentation</p>
+<ul>
+<li>2 column layout</li>
+<li>Exported to HTML</li>
+<li>Put HTML on website</li>
+</ul>
+</div>
+<div id="website" class="section level1">
+<h1>Website</h1>
+<p>Actual Site</p>
+<p><img src="img/locwiki.JPG" /></p>
 <hr />
-<div style="background-color:#F8F9FA; margin: 5px">
-<p>This article is about the United States Library of Congress. For other uses, see <span class="math inline">\(\color{blue}{\text{Library of Congress (disambiguation).}}\)</span></p>
+<p>What I have so far</p>
+<p><img src="img/progress.JPG" /></p>
 </div>
-<div>
-<p>The <strong>Library of Congress (LC)</strong> is the research <span class="math inline">\(\color{blue}{\text{library}}\)</span> that officially serves the <span class="math inline">\(\color{blue}{\text{United States Congress}}\)</span> and is the <span class="math inline">\(\color{blue}{de facto}\)</span> national library of the United States. It is the oldest federal cultural institution in the United States. The library is housed in three buildings on Capitol Hill in Washington, D.C.; it also maintains the National Audio-Visual Conservation Center in Culpeper, Virginia.[1] The library’s functions are overseen by the librarian of Congress, and its buildings are maintained by the architect of the Capitol. The Library of Congress is one of the largest libraries in the world. Its “collections are universal, not limited by subject, format, or national boundary, and include research materials from all parts of the world and in more than 450 languages.”</p>
+<div id="how-did-it-go" class="section level1">
+<h1>How did it go</h1>
+<p>Easy to do - finding a webpage to recreate - downloading images - finding icons - getting text</p>
+<hr />
+<p>Hard to do - making text colorful without HTML - should have just used <span> - doing literally any other formatting - R markdown supports HTML, so you could just write HTML</p>
 </div>
-<div style="display: grid; grid-template-columns: 3fr 1fr; grid-column-gap: 10px;">
-<div style="display: grid; grid-column-start: 1">
-<p>Congress moved to Washington, D.C., in 1800 after sitting for 11 years in the temporary national capitals in New York City and Philadelphia. In both cities, members of the U.S. Congress had access to the sizable collections of the New York Society Library and the Library Company of Philadelphia. The small Congressional Library was housed in the United States Capitol for most of the 19th century until the early 1890s. Most of the original collection had been destroyed by the British in 1814 during the War of 1812, and the library sought to restore its collection in 1815. They bought Thomas Jefferson’s entire personal collection of 6,487 books. After a period of slow growth, another fire struck the library in its Capitol chambers in 1851, again destroying a large amount of the collection, including many of Jefferson’s books. After the American Civil War, the Library of Congress grew rapidly in both size and importance, which sparked a campaign to purchase replacement copies for volumes that had been burned. The library received the right of transference of all copyrighted works to deposit two copies of books, maps, illustrations, and diagrams printed in the United States. It also began to build its collections, and its development culminated between 1888 and 1894 with the construction of a separate, extensive library building across the street from the Capitol.</p>
-<p>The library’s primary mission is to research inquiries made by members of Congress, carried out through the Congressional Research Service. The library is open to the public, although only high-ranking government officials and library employees may check out books and materials.</p>
+<div id="presentation-code" class="section level1">
+<h1>Presentation Code</h1>
+<p><img src="img/presentationcode.JPG" /></p>
 </div>
-<div style="display: grid; grid-column-start: 2">
-<div style="background-color:#F8F9FA; margin: 5px; padding: 10px">
-<p><img src="img/360px-Logo_of_the_United_States_Library_of_Congress.svg.png" /></p>
-<p><img src="img/150px-Seal_of_the_United_States_Library_of_Congress.svg.png" /></p>
-<div class="figure">
-<img src="img/Flag_of_the_United_States_Library_of_Congress_2.svg.png" alt="" />
-<p class="caption">Flag of the Library of Congress</p>
+<div id="website-code-setup" class="section level1">
+<h1>Website Code (Setup)</h1>
+<p>YAML</p>
+<pre><code>name: &quot;Jingcong&#39;s ANTHROBIO 463&quot;
+navbar:
+  title: &quot;Creative pRoject&quot;
+  left:
+    - text: &quot;Home&quot;
+      href: index.html
+    - text: &quot;Presentation&quot;
+      href: presentation.html</code></pre>
 </div>
+<div id="website-code-content-commented" class="section level1">
+<h1>Website Code (Content, commented)</h1>
+<p>index.Rmd</p>
+<pre><code>---
+title: &quot;Library of Congress&quot; #website title
+---
+# lines (separaters)
+___________________ 
+# icons
+![language](img/1024px-OOjs_UI_icon_language-ltr.svg.png){width=20px}
+![edit](img/Pencil_edit_icon.jpg){width=30px style=&quot;float: right;&quot;}
+![save](img/1200px-Five-pointed_star.svg.png){width=30px style=&quot;float: right;&quot;}
+![download](img/30px-OOjs_UI_icon_download.svg.png){width=30px style=&quot;float: right;&quot;}
+___________________</code></pre>
 </div>
-</div>
+<div id="website-code-fenced-divs" class="section level1">
+<h1>Website Code (Fenced Divs)</h1>
+<p>index.Rmd</p>
+<p>Format: 4 colons, brackets for style, 4 colons to close</p>
+<p>:::: {}</p>
+<pre><code>:::: {style=&quot;background-color:#F8F9FA; margin: 5px&quot;}
+
+This article is about the United States Library of Congress. For other uses, see $\color{blue}{\text{Library of Congress (disambiguation).}}$
+
+:::: </code></pre>
 </div>
 
 

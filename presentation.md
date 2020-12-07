@@ -1,34 +1,95 @@
-Creative pRoject presentation
-========================================================
+ANTHROBIO 463 Creative pRoject
+===
 author: Jingcong Hu
-date: 12/7/2020
-autosize: true
+date: 12/07/2020
+
 
 What I did in R
-========================================================
+===
+Website
 
-- Rendered HTML for a website
-- Made this presentation
+- Recreating snippet of Wikipedia page
+- No HTML tags at all
+- Published to GitHub
 
-Slide With Code
-========================================================
+***
+This presentation
 
+- 2 column layout
+- Exported to HTML
+- Put HTML on website
 
-```r
-summary(cars)
+Website
+===
+Actual Site
+
+![](img/locwiki.JPG)
+
+***
+
+What I have so far
+
+![](img/progress.JPG)
+
+How did it go
+===
+Easy to do
+- finding a webpage to recreate
+- downloading images
+- finding icons
+- getting text
+
+***
+Hard to do
+- making text colorful without HTML
+ - should have just used <span>
+- doing literally any other formatting
+ - R markdown supports HTML, so you could just write HTML
+
+Presentation Code
+===
+![](img/presentationcode.JPG)
+
+Website Code (Setup)
+===
+YAML
 ```
-
+name: "Jingcong's ANTHROBIO 463"
+navbar:
+  title: "Creative pRoject"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Presentation"
+      href: presentation.html
 ```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
+Website Code (Content, commented)
+===
+index.Rmd
 ```
+---
+title: "Library of Congress" #website title
+---
+# lines (separaters)
+___________________ 
+# icons
+![language](img/1024px-OOjs_UI_icon_language-ltr.svg.png){width=20px}
+![edit](img/Pencil_edit_icon.jpg){width=30px style="float: right;"}
+![save](img/1200px-Five-pointed_star.svg.png){width=30px style="float: right;"}
+![download](img/30px-OOjs_UI_icon_download.svg.png){width=30px style="float: right;"}
+___________________
+```
+Website Code (Fenced Divs)
+===
+index.Rmd
 
-Slide With Plot
-========================================================
+Format: 4 colons, brackets for style, 4 colons to close
 
-![plot of chunk unnamed-chunk-2](presentation-figure/unnamed-chunk-2-1.png)
+:::: {}
+```
+:::: {style="background-color:#F8F9FA; margin: 5px"}
+
+This article is about the United States Library of Congress. For other uses, see $\color{blue}{\text{Library of Congress (disambiguation).}}$
+
+:::: 
+```
