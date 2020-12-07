@@ -1,0 +1,25 @@
+Creative pRoject presentation
+========================================================
+author: Jingcong Hu
+date: 12/7/2020
+autosize: true
+
+What I did in R
+========================================================
+
+- Rendered HTML for a website
+- Made this presentation
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```

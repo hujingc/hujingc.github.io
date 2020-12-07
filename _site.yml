@@ -1,6 +1,6 @@
-name: "my-website"
+name: "Jingcong's ANTHROBIO 463"
 navbar:
-  title: "My Website"
+  title: "Creative pRoject"
   left:
     - text: "Home"
       href: index.html
