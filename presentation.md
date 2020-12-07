@@ -42,7 +42,7 @@ Easy to do
 ***
 Hard to do
 - making text colorful without HTML
- - should have just used <span>
+ - should have just used span tags
 - doing literally any other formatting
  - R markdown supports HTML, so you could just write HTML
 
