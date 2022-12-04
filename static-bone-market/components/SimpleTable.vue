@@ -1,0 +1,14 @@
+<script setup>
+</script>
+<template>
+  <table>
+    <thead>
+      <tr>
+        <slot name="head"></slot>
+      </tr>
+    </thead>
+    <tbody>
+      <slot name="body"></slot>
+    </tbody>
+  </table>
+</template>

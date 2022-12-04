@@ -1,0 +1,134 @@
+[
+  {
+    "Buyer": "A Palaeontologist with Hoarding Propensities",
+    "Requires": "N/A",
+    "Primary Reward": "Bone Fragments",
+    "Primary Bonus": 5,
+    "Secondary Reward": "Unearthly Fossil",
+    "Scaling of Secondary Reward": "Always 2"
+  },
+  {
+    "Buyer": "A Naive Collector",
+    "Requires": "Suspicion < 4",
+    "Primary Reward": "Thirsty Bombazine Scrap",
+    "Primary Bonus": 0,
+    "Secondary Reward": "",
+    "Scaling of Secondary Reward": ""
+  },
+  {
+    "Buyer": "A Familiar Bohemian Sculptress",
+    "Requires": "Antiquity 0",
+    "Primary Reward": "Preserved Surface Blooms",
+    "Primary Bonus": 4,
+    "Secondary Reward": "Rumour of the Upper River",
+    "Scaling of Secondary Reward": "Support for a Counter-church Theology"
+  },
+  {
+    "Buyer": "A Pedagogically Inclined Grandmother",
+    "Requires": "Menace 0",
+    "Primary Reward": "Incisive Observation",
+    "Primary Bonus": 20,
+    "Secondary Reward": "",
+    "Scaling of Secondary Reward": ""
+  },
+  {
+    "Buyer": "A Theologian of the Old School",
+    "Requires": "Amalgamy 0",
+    "Primary Reward": "Crate of Incorruptible Biscuits",
+    "Primary Bonus": 4,
+    "Secondary Reward": "",
+    "Scaling of Secondary Reward": ""
+  },
+  {
+    "Buyer": "An Enthusiast of the Ancient World",
+    "Requires": "Antiquity 1+",
+    "Primary Reward": "Bessemer Steel Ingot",
+    "Secondary Reward": "Unprovenanced Artefact",
+    "Scaling of Secondary Reward": "Antiquity"
+  },
+  {
+    "Buyer": "Mrs Plenty",
+    "Requires": "Menace 1+",
+    "Primary Reward": "Hinterland Scrip",
+    "Secondary Reward": "Basket of Rubbery Pies",
+    "Scaling of Secondary Reward": "Menace"
+  },
+  {
+    "Buyer": "A Tentacled Servant",
+    "Requires": "Amalgamy 1+",
+    "Primary Reward": "Nightsoil of the Bazaar",
+    "Primary Bonus": 5,
+    "Secondary Reward": "Ambiguous Eolith",
+    "Scaling of Secondary Reward": "5 * Amalgamy"
+  },
+  {
+    "Buyer": "An Investment-Minded Ambassador",
+    "Requires": "Antiquity 1+",
+    "Primary Reward": "Memory of Light",
+    "Primary Bonus": 5,
+    "Secondary Reward": "Tailfeather Brilliant as Flame",
+    "Scaling of Secondary Reward": "0.8*Antiquity2 (Rounded)"
+  },
+  {
+    "Buyer": "A Teller of Terrors",
+    "Requires": "Menace 1+",
+    "Primary Reward": "Morelways",
+    "Primary Bonus": 25,
+    "Secondary Reward": "Royal-Blue Feather",
+    "Scaling of Secondary Reward": "4*Menace2"
+  },
+  {
+    "Buyer": "A Tentacled Entrepreneur",
+    "Requires": "Amalgamy 1+",
+    "Primary Reward": "Memory of Distant Shores",
+    "Primary Bonus": 5,
+    "Secondary Reward": "Final Breath",
+    "Scaling of Secondary Reward": "4*Amalgamy2"
+  },
+  {
+    "Buyer": "An Author of Gothic Tales",
+    "Requires": "Antiquity 1+ Menace 1+",
+    "Primary Reward": "Hinterland Scrip",
+    "Primary Bonus": 5,
+    "Secondary Reward": "Carved Ball of Stygian Ivory",
+    "Scaling of Secondary Reward": "Antiquity * Menace"
+  },
+  {
+    "Buyer": "A Zailor with Particular Interests",
+    "Requires": "Antiquity 1+ Amalgamy 1+",
+    "Primary Reward": "Nodule of Warm Amber",
+    "Primary Bonus": 25,
+    "Secondary Reward": "Knob of Scintillack",
+    "Scaling of Secondary Reward": "Antiquity * Amalgamy"
+  },
+  {
+    "Buyer": "A Rubbery Collector",
+    "Requires": "Menace 1+ Amalgamy 1+",
+    "Primary Reward": "Nightsoil of the Bazaar",
+    "Primary Bonus": 5,
+    "Secondary Reward": "Basket of Rubbery Pies",
+    "Scaling of Secondary Reward": "Menace * Amalgamy"
+  },
+  {
+    "Buyer": "A Constable",
+    "Requires": "Humanoid Skeleton",
+    "Primary Reward": "Hinterland Scrip",
+    "Primary Bonus": 20,
+    "Secondary Reward": "",
+    "Scaling of Secondary Reward": ""
+  },
+  {
+    "Buyer": "The Dumbwaiter of Balmoral",
+    "Requires": "Bird Skeleton",
+    "Primary Reward": "An Identity Uncovered!",
+    "Secondary Reward": "",
+    "Scaling of Secondary Reward": ""
+  },
+  {
+    "Buyer": "The Carpenter's Granddaughter",
+    "Requires": "Skeleton Value 30000",
+    "Primary Reward": "Leviathan Frame",
+    "Secondary Reward": "",
+    "Scaling of Secondary Reward": ""
+  }
+]
