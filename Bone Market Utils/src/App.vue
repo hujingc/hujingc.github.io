@@ -1,5 +1,4 @@
 <script setup>
-import { ref, computed } from 'vue'
 import Home from './pages/Home.vue'
 import Bones from './pages/Bones.vue'
 import Buyers from './pages/Buyers.vue'
@@ -20,19 +19,6 @@ const pages = [
   { href: '/inventory', name: "Inventory" },
   { href: '/calculator', name: "Calculator" }
 ]
-
-const currentPath = ref('')
-window.addEventListener('hashchange', () => {
-  currentPath.value = window.location
-})
-
-
-const currentView = computed(() => {
-  return routes[currentPath || '/']
-})
-function isCurrentPage(page) {
-  return window.location.hash == page.href
-}
 
 </script>
 
