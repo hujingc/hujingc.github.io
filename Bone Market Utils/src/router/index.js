@@ -4,6 +4,7 @@ import Bones from '../pages/Bones.vue'
 import Buyers from '../pages/Buyers.vue'
 import Inventory from '../pages/Inventory.vue'
 import Calculator from '../pages/Calculator.vue'
+import Optimizer from '../pages/Optimizer.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       name: 'calculator',
       component: Calculator
     },
+    {
+      path: '/optimizer',
+      name: 'optimizer',
+      component: Optimizer
+    }
     // {
     //   path: '/about',
     //   name: 'about',
