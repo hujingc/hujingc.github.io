@@ -40,7 +40,6 @@ function processResult() {
 </script>
 
 <template>
-  {{ selectedOptions }}
   <blockquote>{{ result }}</blockquote>
   <button @click="processResult">Process result</button>
   <div>Instruction: if anything is selected in a section, the rest will be blacklisted</div>
