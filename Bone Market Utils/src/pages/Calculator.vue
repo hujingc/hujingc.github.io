@@ -122,17 +122,15 @@ function attributeFiltered(data) {
   maxSkulls: {{ maxSkulls }}
   <br />
   current skulls{{ currentSkulls }}
-  <form>
-    <FilterBox :activeFilter=activeFilter @filterOption="filterTables"></FilterBox>
-    <label>Target Buyer:</label>
-    <select>
-      <option v-for="buyer in filteredBuyers">{{ buyer.Buyer }}</option>
-    </select>
-    <label>Target Skeleton Type:</label>
-    <select v-model="selectSkeleton">
-      <option v-for="skeleton in skeletonTypes">{{ skeleton }}</option>
-    </select>
-  </form>
+  <FilterBox :activeFilter=activeFilter @filterOption="filterTables"></FilterBox>
+  <label>Target Buyer:</label>
+  <select>
+    <option v-for="buyer in filteredBuyers">{{ buyer.Buyer }}</option>
+  </select>
+  <label>Target Skeleton Type:</label>
+  <select v-model="selectSkeleton">
+    <option v-for="skeleton in skeletonTypes">{{ skeleton }}</option>
+  </select>
   <div class="grid-container">
     <div class="flex-container">
       <div class="item" v-for="pair in typeData">

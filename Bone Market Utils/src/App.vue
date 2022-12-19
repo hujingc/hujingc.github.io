@@ -4,7 +4,7 @@ const pages = [
   { href: '/bones', name: "Bones" },
   { href: '/buyers', name: "Buyers" },
   { href: '/inventory', name: "Inventory" },
-  { href: '/calculator', name: "Calculator" },
+  // { href: '/calculator', name: "Calculator" },
   { href: '/optimizer', name: "Optimizer" },
 ]
 
