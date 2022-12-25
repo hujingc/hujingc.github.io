@@ -4,15 +4,19 @@
 import { ref, reactive, computed } from 'vue'
 import variableOptions from '../datasets/solver.json'
 
-let selectedOptions = reactive({ "Skull": [], "Appendage": [], "Adjustment": [], "Declaration": [], "Embellishment": [] })
 let result = ref("")
-const { Torso, Skull, Appendage, Adjustment, Declaration, Embellishment } = variableOptions
-const items = { "Skull": Skull, "Appendage": Appendage, "Adjustment": Adjustment, "Declaration": Declaration, "Embellishment": Embellishment }
-
+const { Torso, Skull, Appendage, Adjustment, Declaration, Embellishment, Buyer } = variableOptions
+const items = { "Skull": Skull, "Appendage": Appendage, "Declaration": Declaration, "Buyer": Buyer }
+const exclusions = { "Skull": Skull, "Adjustment": Adjustment, "Embellishment": Embellishment }
+// Single (Radio)
 let marketFluctuation = ref('')
 let zoologicalMania = ref('')
 let torsoPick = ref('')
 
+// Multi (Checkbox)
+let selectedOptions = reactive({ "Skull": [], "Appendage": [], "Adjustment": [], "Declaration": [], "Embellishment": [], "Buyer": [] })
+
+// Button functions
 function processResult() {
   let mania = zoologicalMania.value ? `--zoological-mania ${zoologicalMania.value}` : ""
   let fluctuation = marketFluctuation.value ? `--bone-market-fluctuations ${marketFluctuation.value}` : ""
@@ -34,14 +38,22 @@ function processResult() {
 
   let blacklist = (torsoBlacklist.length || massBlacklist.length) ? `--blacklist ${torsoBlacklist.join(" ")} ${massBlacklist.join(" ")}` : ""
 
-  result.value = `pipenv run bone_market_solver --time-limit 60 --shadowy 302
+  result.value = `pipenv run bone_market_solver --maximum-exhaustion 4 --time-limit 60 --shadowy 302
    ${fluctuation} ${mania} ${blacklist}`
+}
+
+function clearSelection() {
+  marketFluctuation.value = null
+  for (let option in selectedOptions) {
+    selectedOptions[option] = []
+  }
 }
 </script>
 
 <template>
   <blockquote>{{ result }}</blockquote>
-  <button @click="processResult">Process result</button>
+  <button @click="processResult">Process Result</button>
+  <button @click="clearSelection">Clear Selections</button>
   <div>Instruction: if anything is selected in a section, the rest will be blacklisted</div>
   <div class="container">
     <div class="item">
@@ -77,5 +89,8 @@ function processResult() {
   </div>
 </template>
 <style>
-
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 </style>
