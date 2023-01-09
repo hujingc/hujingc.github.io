@@ -117,5 +117,12 @@
     "Buyer.THE_TRIFLING_DIPLOMAT_REPTILE",
     "Buyer.THE_TRIFLING_DIPLOMAT_SKULLS",
     "Buyer.THE_TRIFLING_DIPLOMAT_SPIDER"
+  ],
+  "OccasionalBuyer": [
+    "an_enthusiast_in_skulls",
+    "a_dreary_midnighter",
+    "a_colourful_phantasist",
+    "an_ingenuous_malacologist",
+    "an_enterprising_boot_salesman"
   ]
 }

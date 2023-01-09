@@ -195,7 +195,7 @@ function attributeFiltered(data) {
           <tr v-for="pair in summaryData">
             <td>{{ pair['name'] }}</td>
             <td>{{ pair['value'] }}</td>
-          </tr>
+            >
         </template>
       </SimpleTable>
     </div>
@@ -206,15 +206,6 @@ function attributeFiltered(data) {
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap
-}
-
-.item {
-  padding: 1%
 }
 
 .multipleButton {

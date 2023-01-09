@@ -4,7 +4,7 @@ import constantBuyers from '../datasets/constantBuyers.json'
 import occasionalBuyers from '../datasets/occasionalBuyers.json'
 import SimpleTable from '../components/SimpleTable.vue'
 import FilterBox from '../components/FilterBox.vue'
-const buyerAttributes = ["Buyer", "Requires", "Primary Reward", "Secondary Reward", "Scaling of Secondary Reward"]
+const buyerAttributes = ["Buyer", "Requires", "Primary Reward", "Secondary Reward"]
 
 // Filter
 const activeFilter = ref('');

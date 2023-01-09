@@ -35,7 +35,7 @@ function transformData(originalData) {
 
 </script>
 <template>
-  <div class="container">
+  <div class="flex-container">
     <div class="item" v-for="dataSet in typeData">
       <h2>{{ dataSet[0] }}</h2>
       <SimpleTable>

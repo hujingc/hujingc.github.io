@@ -64,7 +64,7 @@ textarea {
   width: 50%
 }
 
-.container {
+.flex-container {
   display: flex;
   flex-wrap: wrap
 }
