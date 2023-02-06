@@ -5,7 +5,7 @@ import Buyers from '../pages/Buyers.vue'
 import Inventory from '../pages/Inventory.vue'
 import Calculator from '../pages/Calculator.vue'
 import Optimizer from '../pages/Optimizer.vue'
-
+import Moulin from '../pages/Moulin.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -38,6 +38,11 @@ const router = createRouter({
       path: '/optimizer',
       name: 'optimizer',
       component: Optimizer
+    },
+    {
+      path: '/moulin',
+      name: 'moulin',
+      component: Moulin
     }
     // {
     //   path: '/about',

@@ -1,0 +1,62 @@
+[
+  {
+    "number": 25,
+    "item": "Trace of the First City",
+    "increase": "Cautionary",
+    "decrease": "Ironic"
+  },
+  {
+    "number": 80,
+    "item": "Relic of the Second City",
+    "increase": "Cautionary",
+    "decrease": "Tragic"
+  },
+  {
+    "number": 250,
+    "item": "Relic of the Fourth City",
+    "increase": "Cautionary",
+    "decrease": "Tragic"
+  },
+  {
+    "number": 125,
+    "item": "Rusted Stirrup",
+    "increase": "Cautionary",
+    "decrease": "Tragic"
+  },
+  {
+    "number": 50,
+    "item": "First City Coin",
+    "increase": "Tragic",
+    "decrease": "Ironic"
+  },
+  {
+    "number": 125,
+    "item": "Relic of the Third City",
+    "increase": "Tragic",
+    "decrease": "Ironic"
+  },
+  {
+    "number": 25,
+    "item": "Trace of Viric",
+    "increase": "Ironic",
+    "decrease": "Tragic"
+  },
+  {
+    "number": 5,
+    "item": "Nicatorean Relic",
+    "increase": "Ironic",
+    "decrease": "Cautionary"
+  },
+  {
+    "number": 125,
+    "item": "Silvered Cat's Claw",
+    "increase": "Ironic",
+    "decrease": "Cautionary"
+  },
+  {
+    "number": 1,
+    "item": "Unlawful Device",
+    "increase": "Ironic",
+    "decrease": "Cautionary"
+  }
+]

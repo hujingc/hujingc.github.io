@@ -195,7 +195,7 @@ function attributeFiltered(data) {
           <tr v-for="pair in summaryData">
             <td>{{ pair['name'] }}</td>
             <td>{{ pair['value'] }}</td>
-            >
+          </tr>
         </template>
       </SimpleTable>
     </div>
