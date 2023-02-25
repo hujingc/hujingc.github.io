@@ -74,12 +74,11 @@ const tragicCount = computed(() => {
 
 </script>
 <template>
-
-  <div class="flex-container">
-    <section class="item" style="width: 20%">
-      <p>This page will calculate the number of usages for each inventory item for writing monographs at Moulin.</p>
-    </section>
-    <section class="item">
+  <section>
+    <p>This page will calculate the number of usages for each inventory item for writing monographs at Moulin.</p>
+  </section>
+  <div style="display: grid; grid-template-columns: 1 1; justify-content: space-around;">
+    <section style="grid-column: 1;">
       <h2>Increase/Decrease totals</h2>
       <SimpleTable>
         <template #head>
@@ -106,7 +105,7 @@ const tragicCount = computed(() => {
         </template>
       </SimpleTable>
     </section>
-    <section class="item">
+    <section style="grid-column: 2;">
       <h2>Usages in Inventory</h2>
       <SimpleTable>
         <template #head>

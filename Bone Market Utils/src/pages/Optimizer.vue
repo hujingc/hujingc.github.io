@@ -10,6 +10,10 @@ const items = { "Skull": Skull, "Appendage": Appendage, "Declaration": Declarati
 const exclusions = { "Skull": Skull, "Adjustment": Adjustment, "Embellishment": Embellishment }
 
 // Single (Radio)
+let exhaustionLimit = ref('4')
+let timeLimit = ref('60')
+let shadowyLevel = ref('302')
+
 let preferredQuality = ref('')
 let preferredSkeletonType = ref('')
 let currentBuyer = ref('')
@@ -22,10 +26,16 @@ let excludedOptions = reactive({ "Skull": [], "Appendage": [], "Adjustment": [],
 
 // Button functions
 function processResult() {
-  let fluctuation = preferredQuality.value ? `--bone-market-fluctuations ${preferredQuality.value}` : ""
-  let mania = preferredSkeletonType.value ? `--zoological-mania ${preferredSkeletonType.value}` : ""
-  let occasionalBuyer = currentBuyer.value ? `--occasional-buyer ${currentBuyer.value}` : ""
-  let diplomat = currentDiplomat.value ? `--diplomat-fascination ${currentDiplomat.value}` : ""
+  let exhaustion = exhaustionLimit.value ? ` --maximum-exhaustion ${exhaustionLimit.value}` : ""
+  let time = timeLimit.value ? ` --time-limit ${timeLimit.value}` : ""
+  let shadowy = shadowyLevel.value ? ` --shadowy ${shadowyLevel.value}` : ""
+
+  let fluctuation = preferredQuality.value ? ` --bone-market-fluctuations ${preferredQuality.value}` : ""
+  let mania = preferredSkeletonType.value ? ` --zoological-mania ${preferredSkeletonType.value}` : ""
+  let occasionalBuyer = currentBuyer.value ? ` --occasional-buyer ${currentBuyer.value}` : ""
+  let diplomat = currentDiplomat.value ? ` --diplomat-fascination ${currentDiplomat.value}` : ""
+
+  // Proces Blacklist options
   let torsoBlacklist = []
   let massBlacklist = []
 
@@ -41,17 +51,15 @@ function processResult() {
       massBlacklist.push(...excludedItems)
     }
   }
-
   for (let option in excludedOptions) {
     if (excludedOptions[option].length) {
       massBlacklist.push(...excludedOptions[option])
     }
   }
-
   let blacklist = (torsoBlacklist.length || massBlacklist.length) ? `--blacklist ${torsoBlacklist.join(" ")} ${massBlacklist.join(" ")}` : ""
 
-  result.value = `pipenv run bone_market_solver --maximum-exhaustion 4 --time-limit 60 --shadowy 302
-   ${fluctuation} ${mania} ${occasionalBuyer} ${diplomat} ${blacklist}`
+  // Final Result
+  result.value = `pipenv run bone_market_solver${exhaustion}${time}${shadowy}${fluctuation}${mania}${occasionalBuyer}${diplomat}${blacklist}`
 }
 
 function clearSelection() {
@@ -64,13 +72,37 @@ function clearSelection() {
     excludedOptions[option] = []
   }
 }
+function copyResult() {
+  navigator.clipboard.writeText(result.value).then(() => {
+    console.log('copied')
+  }, () => {
+    console.log('copy failed')
+  });
+}
 </script>
 
 <template>
   <blockquote>{{ result }}</blockquote>
   <button @click="processResult">Process Result</button>
   <button @click="clearSelection">Clear Selections</button>
+  <button v-if="result" @click="copyResult">Copy Result</button>
+
   <div>Instruction: if anything is selected in a section, the rest will be blacklisted</div>
+  <section>
+    <h2>Basic Options</h2>
+    <label>
+      Maximum Exhaustion
+      <input v-model="exhaustionLimit" />
+    </label>
+    <label>
+      Time Limit
+      <input v-model="timeLimit" />
+    </label>
+    <label>
+      Player Shadowy
+      <input v-model="shadowyLevel" />
+    </label>
+  </section>
   <section>
     <h2>Current Manias</h2>
     <div class="flex-container">

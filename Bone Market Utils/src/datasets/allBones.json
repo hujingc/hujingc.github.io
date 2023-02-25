@@ -114,7 +114,7 @@
     {
         "Type": "Skulls",
         "Name": "Bright Brass Skull",
-        "Penny Value": "6000-6500",
+        "Penny Value": 6500,
         "Base Challenge": "6 Mithridacy",
         "attributes and notes": "2-6 x Self-Evident Implausibility\nAlso costs 200 x Brass on success."
     },
@@ -143,7 +143,7 @@
     {
         "Type": "Arms",
         "Name": "Knotted Humerus",
-        "Penny Value": "10/300",
+        "Penny Value": 300,
         "Base Challenge": "6 Mithridacy\nDifficulty increases by 1 per non-Knotted Humerus limb",
         "Amalgamy": 1,
         "attributes and notes": "0-2 x Self-Evident Implausibility"
@@ -257,7 +257,7 @@
     {
         "Type": "Tentacles",
         "Name": "Withered Tentacle",
-        "Penny Value": "50/250",
+        "Penny Value": 250,
         "Base Challenge": "1 Monstrous Anatomy\nDifficulty increases by 2 for each non-tentacle limb",
         "attributes and notes": "-1 x Antiquity\n 0-1 x Self-Evident Implausibility"
     },
@@ -302,7 +302,7 @@
     {
         "Type": "Tails",
         "Name": "Withered Tentacle",
-        "Penny Value": "50-250",
+        "Penny Value": 250,
         "Base Challenge": "5 Monstrous Anatomy",
         "attributes and notes": "-1 x Antiquity\n 0-2 x Self-Evident Implausibility"
     },
