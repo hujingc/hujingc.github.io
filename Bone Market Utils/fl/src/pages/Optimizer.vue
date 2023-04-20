@@ -56,7 +56,7 @@ function processResult() {
       massBlacklist.push(...excludedOptions[option])
     }
   }
-  let blacklist = (torsoBlacklist.length || massBlacklist.length) ? `--blacklist ${torsoBlacklist.join(" ")} ${massBlacklist.join(" ")}` : ""
+  let blacklist = (torsoBlacklist.length || massBlacklist.length) ? ` --blacklist ${torsoBlacklist.join(" ")} ${massBlacklist.join(" ")}` : ""
 
   // Final Result
   result.value = `pipenv run bone_market_solver${exhaustion}${time}${shadowy}${fluctuation}${mania}${occasionalBuyer}${diplomat}${blacklist}`
@@ -175,8 +175,6 @@ function copyResult() {
       </div>
     </div>
   </section>
-
-
 </template>
 <style>
 .grid {
