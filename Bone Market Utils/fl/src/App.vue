@@ -1,6 +1,6 @@
 <script setup>
 const pages = [
-  { href: '/fl/index.html', name: "Home" },
+  { href: '/fl/index.html', name: "Parser" },
   { href: '/fl/bones', name: "Bones" },
   { href: '/fl/buyers', name: "Buyers" },
   { href: '/fl/inventory', name: "Inventory" },
@@ -11,6 +11,7 @@ const pages = [
 
 <template>
   <header>
+    <a href="/">Home</a>
     <nav>
       <ul v-for="page in pages">
         <router-link :to=page.href>{{ page.name }}</router-link>
