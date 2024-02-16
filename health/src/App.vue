@@ -1,32 +1,36 @@
-<script setup lang="ts">
-import { ref, reactive } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
-
-let goals = reactive(["Shower", "Floss", "Walk"]);
-</script>
-
 <template>
-  <section>
-    <h1>Screen 1</h1>
-    <div v-for="goal in goals" :key="goal">
-      <input type="checkbox" :id="`${goal}_input`" />
-      <label :for="`${goal}_input`">{{ goal }}</label>
-    </div>
-  </section>
-  <HelloWorld msg="Vite + Vue" />
+  <div>
+    <h2>Task List for {{ date }}</h2>
+
+    <ul>
+      <li v-for="taskId in taskIds" :key="taskId">
+        <input type="checkbox" :id="taskId" :checked="getTaskStatus(taskId)" @change="handleCheckboxChange(taskId)" />
+        <label :for="taskId">{{ taskId }}</label>
+      </li>
+    </ul>
+  </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+import { useIndexedDB } from './indexedDB';
+
+const date = ref('2024-02-16');
+const taskIds = ['task1', 'task2', 'task3']; // Add more task IDs as needed
+
+const { loadedTaskStatus, loadInitialTaskStatus, updateTaskStatus } = useIndexedDB();
+
+onMounted(() => {
+  // Example: Load initial task status from IndexedDB
+  loadInitialTaskStatus(date.value);
+});
+
+const getTaskStatus = (taskId) => {
+  return loadedTaskStatus.value ? loadedTaskStatus.value[taskId] : false;
+};
+
+const handleCheckboxChange = (taskId) => {
+  const isChecked = getTaskStatus(taskId);
+  updateTaskStatus(date.value, taskId, !isChecked);
+};
+</script>
