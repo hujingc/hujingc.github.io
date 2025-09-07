@@ -1,0 +1,351 @@
+[
+    {
+        "Type": "Torsos",
+        "Name": "Headless Skeleton",
+        "Penny Value": 250,
+        "Skull Space": 1,
+        "Limb Space": 4,
+        "Tail Space": 1,
+        "Existing Arm": 2,
+        "Existing Leg": 2
+    },
+    {
+        "Type": "Torsos",
+        "Name": "Human Ribcage",
+        "Penny Value": 1250
+    },
+    {
+        "Type": "Torsos",
+        "Name": "Skeleton with Seven Necks",
+        "Penny Value": 6250,
+        "Skull Space": 7,
+        "Amalgamy": 2,
+        "Menace": 1
+    },
+    {
+        "Type": "Torsos",
+        "Name": "Flourishing Ribcage",
+        "Penny Value": 1250,
+        "Amalgamy": 2
+    },
+    {
+        "Type": "Torsos",
+        "Name": "Mammoth Ribcage",
+        "Penny Value": 6250,
+        "Antiquity": 2
+    },
+    {
+        "Type": "Torsos",
+        "Name": "Leviathan Frame",
+        "Penny Value": 31250
+    },
+    {
+        "Type": "Torsos",
+        "Name": "Prismatic Frame",
+        "Penny Value": 31250,
+        "Amalgamy": 2,
+        "Antiquity": 2
+    },
+    {
+        "Type": "Torsos",
+        "Name": "Thorned Ribcage",
+        "Penny Value": 1250,
+        "Amalgamy": 1,
+        "Menace": 1
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Carved Ball of Stygian Ivory",
+        "Penny Value": 250,
+        "Base Challenge": "6 Mithridacy\nReduced by 1 per Skull installed.",
+        "attributes and notes": "0-2 x Self-Evident Implausibility\n Reduces Skulls Needed, but does not count as an actual skull."
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Doubled Skull",
+        "Penny Value": 6250,
+        "Base Challenge": "4 Monstrous Anatomy",
+        "Antiquity": 2,
+        "Amalgamy": 1,
+        "attributes and notes": "Adds 2 Skulls while only using one Skull Slot."
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Horned Skull",
+        "Penny Value": 1250,
+        "Base Challenge": "6 Monstrous Anatomy",
+        "Antiquity": 1,
+        "Menace": 2,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Skull in Coral",
+        "Penny Value": "1750",
+        "Base Challenge": "8 Shapeling Arts\nEvery point of Amalgamy reduces difficulty by 5",
+        "Amalgamy": 2,
+        "attributes and notes": "0-1 x Self-Evident Implausibility\nAlso costs 1 x Knob of Scintillack."
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Plated Skull",
+        "Penny Value": "2500",
+        "Base Challenge": "4 Monstrous Anatomy",
+        "Menace": 2,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Eyeless Skull",
+        "Penny Value": "3000",
+        "Base Challenge": "6 Monstrous Anatomy",
+        "Menace": 1,
+        "attributes and notes": "0 or 5 CP Nightmares"
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Sabre-toothed Skull",
+        "Penny Value": 6250,
+        "Base Challenge": "6 Monstrous Anatomy",
+        "Antiquity": 1,
+        "Menace": 1,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Bright Brass Skull",
+        "Penny Value": "6000-6500",
+        "Base Challenge": "6 Mithridacy",
+        "attributes and notes": "2-6 x Self-Evident Implausibility\nAlso costs 200 x Brass on success."
+    },
+    {
+        "Type": "Skulls",
+        "Name": "A Custom-Engraved Skull",
+        "Penny Value": 10000,
+        "Base Challenge": "4 Mithridacy",
+        "attributes and notes": "FEAST OF THE ROSE\n 0-2 x Self-Evident Implausibility\n 2 x Bone Market Exhaustion"
+    },
+    {
+        "Type": "Skulls",
+        "Name": "Segmented Ribcage",
+        "Penny Value": 250,
+        "Base Challenge": "N/A",
+        "attributes and notes": "4 x Skeleton: Limbs Needed\n 1 x Skeleton: Number of Segments\nRequires:  Skeleton: Torso Style exactly 110\nAlso reduces Skeleton: Skulls Needed without counting as a skull."
+    },
+    {
+        "Type": "Arms",
+        "Name": "Crustacean Pincer",
+        "Penny Value": 0,
+        "Base Challenge": "N/A",
+        "Menace": 1,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Arms",
+        "Name": "Knotted Humerus",
+        "Penny Value": "10/300",
+        "Base Challenge": "6 Mithridacy\nDifficulty increases by 1 per non-Knotted Humerus limb",
+        "Amalgamy": 1,
+        "attributes and notes": "0-2 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Arms",
+        "Name": "Human Arm",
+        "Penny Value": 250,
+        "Base Challenge": "N/A",
+        "attributes and notes": "-1 x Menace"
+    },
+    {
+        "Type": "Arms",
+        "Name": "Fossilised Forelimb",
+        "Penny Value": 2750,
+        "Base Challenge": "11 Monstrous Anatomy",
+        "Antiquity": 2,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Arms",
+        "Name": "Ivory Humerus",
+        "Penny Value": 1500,
+        "Base Challenge": "6 Kataleptic Toxicology",
+        "attributes and notes": "0-2 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Legs",
+        "Name": "Femur of a Surface Deer",
+        "Penny Value": 10,
+        "Base Challenge": "N/A",
+        "attributes and notes": "-1 x Menace"
+    },
+    {
+        "Type": "Legs",
+        "Name": "Unidentified Thigh Bone",
+        "Penny Value": 100,
+        "Base Challenge": "N/A",
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Legs",
+        "Name": "Femur of a Jurassic Beast",
+        "Penny Value": 300,
+        "Base Challenge": "1 Mithridacy\nDifficulty increases with 2 for every Fin and Tentacle",
+        "Antiquity": 1,
+        "attributes and notes": "0-2 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Legs",
+        "Name": "Helical Thighbone",
+        "Penny Value": 300,
+        "Base Challenge": "6 Shapeling Arts",
+        "Amalgamy": 2,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Legs",
+        "Name": "Holy Relic of the Thigh of Saint Fiacre",
+        "Penny Value": 1250,
+        "Base Challenge": "Mithridacy\nDifficulty varies with  Torso Style",
+        "attributes and notes": "0-11 x Support for a Counter-church Theology, depending on which Torso\n 0-2 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Legs",
+        "Name": "Ivory Femur",
+        "Penny Value": 6500,
+        "Base Challenge": "7 Monstrous Anatomy",
+        "attributes and notes": "0-4 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Wings",
+        "Name": "Bat Wing",
+        "Penny Value": 1,
+        "Base Challenge": "3 Monstrous Anatomy\nDifficulty increases with fins, details unknown",
+        "attributes and notes": "-1 x Menace\n 0-2 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Wings",
+        "Name": "Wing of a Young Terror Bird",
+        "Penny Value": 250,
+        "Base Challenge": "3 Monstrous Anatomy",
+        "Antiquity": 1,
+        "Menace": 1,
+        "attributes and notes": "0-2 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Wings",
+        "Name": "Albatross Wing",
+        "Penny Value": 1250,
+        "Base Challenge": "3 Monstrous Anatomy\nDifficulty increases by 2 for every fin and tentacle.",
+        "Amalgamy": 1,
+        "attributes and notes": "0-2? x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Fins",
+        "Name": "Fin Bones, Collected",
+        "Penny Value": "50",
+        "Base Challenge": "3 Monstrous Anatomy\nDifficulty increases by 2 for each non-fin limb",
+        "attributes and notes": "0-2? x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Fins",
+        "Name": "Amber-Crusted Fin",
+        "Penny Value": 1500,
+        "Base Challenge": "1 Monstrous Anatomy\nDifficulty increases by 2 for each non-fin limb",
+        "Menace": 1,
+        "Amalgamy": 1,
+        "attributes and notes": "0-2? x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Tentacles",
+        "Name": "Withered Tentacle",
+        "Penny Value": "50/250",
+        "Base Challenge": "1 Monstrous Anatomy\nDifficulty increases by 2 for each non-tentacle limb",
+        "attributes and notes": "-1 x Antiquity\n 0-1 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Tails",
+        "Name": "No tail",
+        "Penny Value": "N/A",
+        "Base Challenge": "N/A",
+        "attributes and notes": "Removes Tails Needed entirely."
+    },
+    {
+        "Type": "Tails",
+        "Name": "Jet Black Stinger",
+        "Penny Value": "50",
+        "Base Challenge": "5 Monstrous Anatomy",
+        "Menace": 2,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Tails",
+        "Name": "Obsidian Chitin Tail",
+        "Penny Value": "500",
+        "Base Challenge": "4 Monstrous Anatomy",
+        "Amalgamy": 1,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Tails",
+        "Name": "Plaster Tail Bones",
+        "Penny Value": 250,
+        "Base Challenge": "4 Mithridacy",
+        "attributes and notes": "1-4 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Tails",
+        "Name": "Tomb-Lion's Tail",
+        "Penny Value": 250,
+        "Base Challenge": "4 Monstrous Anatomy",
+        "Antiquity": 1,
+        "attributes and notes": ""
+    },
+    {
+        "Type": "Tails",
+        "Name": "Withered Tentacle",
+        "Penny Value": "50-250",
+        "Base Challenge": "5 Monstrous Anatomy",
+        "attributes and notes": "-1 x Antiquity\n 0-2 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Tails",
+        "Name": "Segmented Ribcage",
+        "Penny Value": 250,
+        "Base Challenge": "N/A",
+        "attributes and notes": "2 x Skeleton: Limbs Needed\n 1 x Skeleton: Number of Segments\nRequires:  Skeleton: Torso Style exactly 110\nCosts: (50 * Segments3) x Nevercold Brass Sliver\nNote: will still require a tail."
+    },
+    {
+        "Type": "Modification",
+        "Name": "Add four more joints to your skeleton",
+        "Penny Value": "N/A",
+        "Base Challenge": "8 Shapeling Arts",
+        "attributes and notes": "4 x Limbs Needed\n 2 x Amalgamy\nCosts  1 x Nodule of Trembling Amber and an amount of  Nodule of Warm Amber equal to 25 × Joints^2; the number of used and unused joints your skeleton currently has."
+    },
+    {
+        "Type": "Modification",
+        "Name": "Remove the tail from your Skeleton",
+        "Penny Value": "N/A",
+        "Base Challenge": "",
+        "attributes and notes": "Requires Ravenglass Knife\n -1 x Tails\nRemoves the tail, but not the attributes it added. Could let you declare the skeleton as an animal without a tail."
+    },
+    {
+        "Type": "Modification",
+        "Name": "Carve away some evidence of age",
+        "Penny Value": "N/A",
+        "Base Challenge": "6 Mithridacy",
+        "attributes and notes": "Requires Scrimshander Carving Knife\n -2 x Antiquity\n 0-? x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Modification",
+        "Name": "Make your skeleton less dreadful",
+        "Penny Value": "N/A",
+        "Base Challenge": "6 Kataleptic Toxicology",
+        "attributes and notes": "Requires Patent Osteological Sand and Wax\n -2 x Menace\n 0-2 x Self-Evident Implausibility"
+    },
+    {
+        "Type": "Modification",
+        "Name": "Disguise the amalgamy of this piece",
+        "Penny Value": "N/A",
+        "Base Challenge": "6 Kataleptic Toxicology",
+        "attributes and notes": "Requires Lithification Liquid\nCosts  25 x Jade Fragment\n -2 x Amalgamy\n 0-2 x Self-Evident Implausibility"
+    }
+]

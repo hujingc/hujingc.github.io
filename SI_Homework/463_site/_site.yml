@@ -1,0 +1,8 @@
+name: "Jingcong's ANTHROBIO 463"
+navbar:
+  title: "Creative pRoject"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Presentation"
+      href: presentation.html

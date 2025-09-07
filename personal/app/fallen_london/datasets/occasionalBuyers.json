@@ -1,0 +1,72 @@
+[
+  {
+    "Buyer": "An Enthusiast in Skulls",
+    "Requires": "2+ Skulls",
+    "Primary Reward": "Piece of Rostygold",
+    "Secondary Reward": "Vital Intelligence",
+    "Scaling of Secondary Reward": "(Skull-1)1.8"
+  },
+  {
+    "Buyer": "A Dreary Midnighter",
+    "Requires": "110-299 Amalgamy 0  Support for a Counter-church Theology 0",
+    "Primary Reward": "Fistful of Surface Currency",
+    "Secondary Reward": "Vienna Opening",
+    "Scaling of Secondary Reward": "Always 1"
+  },
+  {
+    "Buyer": "An Ingenuous Malacologist",
+    "Requires": "4+ Tentacles",
+    "Primary Reward": "Preserved Surface Blooms",
+    "Secondary Reward": "Volume of Collated Research",
+    "Scaling of Secondary Reward": "((Tentacles)2.2)/5"
+  },
+  {
+    "Buyer": "An Enterprising Boot Salesman",
+    "Requires": "Menace 0 Amalgamy 0 4+ Legs",
+    "Primary Reward": "Whisper-Satin Scrap",
+    "Secondary Reward": "Ostentatious Diamond",
+    "Scaling of Secondary Reward": "Legs2.2"
+  },
+  {
+    "Buyer": "A Colourful Phantasist (Amalgamy)",
+    "Requires": "Self-Evident Implausibility Amalgamy 4",
+    "Primary Reward": "Hinterland Scrip",
+    "Secondary Reward": "Slim Volume of Bazaarine Poetry",
+    "Scaling of Secondary Reward": "(Self-Evident Implausibility * Amalgamy) + 1"
+  },
+  {
+    "Buyer": "A Colourful Phantasist (Menace)",
+    "Requires": "Self-Evident Implausibility Menace 4",
+    "Primary Reward": "Solacefruit",
+    "Secondary Reward": "Carved Ball of Stygian Ivory",
+    "Scaling of Secondary Reward": "(Self-Evident Implausibility * Menace) + 1"
+  },
+  {
+    "Buyer": "A Colourful Phantasist (Antiquity)",
+    "Requires": "Self-Evident Implausibility Antiquity 4",
+    "Primary Reward": "Memory of Light",
+    "Secondary Reward": "Knob of Scintillack",
+    "Scaling of Secondary Reward": "(Self-Evident Implausibility * Antiquity) + 1"
+  },
+  {
+    "Buyer": "The Trifling Diplomat (Quality)",
+    "Requires": "(Antiquity / Amalgamy / Menace) 5+",
+    "Primary Reward": "Assortment of Khaganian Coinage",
+    "Secondary Reward": "Compromising Document",
+    "Scaling of Secondary Reward": "One of the following: Antiquity2 Amalgamy2 Menace2"
+  },
+  {
+    "Buyer": "The Trifling Diplomat (Type)",
+    "Requires": "Reptile, Bird, Fish or Insect",
+    "Primary Reward": "Assortment of Khaganian Coinage",
+    "Secondary Reward": "Compromising Document",
+    "Scaling of Secondary Reward": "[1/3 × (Amalgamy + Menace + Antiquity)]2.2"
+  },
+  {
+    "Buyer": "The Trifling Diplomat (Special)",
+    "Requires": "5+ Skulls 10+ legs",
+    "Primary Reward": "Assortment of Khaganian Coinage",
+    "Secondary Reward": "Compromising Document",
+    "Scaling of Secondary Reward": "[1/3 × (Amalgamy + Menace + Antiquity)]2.2"
+  }
+]

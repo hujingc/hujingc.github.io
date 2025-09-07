@@ -1,0 +1,392 @@
+html {
+    font-family: "Book Antiqua", sans-serif;
+}
+
+header {
+    background-attachment: fixed;
+    /* Parallax effect */
+    background-image: url("../images/housings.jpg");
+    /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;
+    /* Parallax effect */
+    background-repeat: no-repeat;
+    /* Parallax effect */
+    background-size: cover;
+    /* Parallax effect */
+    color: black;
+    height: 500px;
+    /* Parallax effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 200%;
+    padding: 1%;
+    width: fit-content;
+    border-radius: 30px;
+    border: 20px solid;
+    border-image: url("../images/Art-Nouveau-Design-13.svg") 30 round;
+    background: url('../images/paper.jpg');
+    height: fit-content;
+    text-align: center;
+    letter-spacing: .1em;
+    text-shadow:
+        -1px -1px 1px #7f7d7d,
+        -2px 0px 1px #828181,
+        -3px 1px 1px #868585,
+        -4px 2px 1px #8b8a89,
+        -5px 3px 1px #8f8e8d,
+        -6px 4px 1px #949392,
+        -7px 5px 1px #999897;
+}
+
+.skip {
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+}
+
+.skip:focus {
+    position: absolute;
+    top: 20px;
+    border: 5px solid green;
+    background-color: white;
+    padding: 5px;
+    z-index: 1;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+}
+
+body {
+    font-size: 100%;
+    display: grid;
+    background: black;
+}
+
+body *:focus {
+    border: 2px solid green;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+nav {
+    font-size: 20px;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: stretch;
+    padding: 5px;
+    grid-column: 1/-1;
+}
+
+nav a {
+    color: #92d1d5;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    padding: 0 1%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 10fr 1fr;
+    background: black;
+}
+
+.description {
+    grid-row: 2;
+    grid-column: 2/span 1;
+    color: black;
+    width: 1fr;
+    background-color: #fcac00;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+}
+
+.content {
+    display: grid;
+    background: #bdaf95;
+    grid-column: 2;
+    grid-row: 3;
+    padding: 10px;
+    border: 5px double #897d67;
+}
+
+section {
+    display: grid;
+    padding-bottom: 40px;
+    background: #dfd5c5;
+    margin: 10px;
+    padding: 5px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr auto;
+}
+
+img {
+    display: inline-block;
+    width: 150px;
+    grid-row: 1/span 3;
+}
+
+section img {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    grid-column: 1;
+    grid-row: 1;
+    border: 8px solid green;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5%;
+}
+
+.content-text {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 5px;
+    margin: 5px;
+}
+
+section a {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: end;
+    justify-self: end;
+}
+
+footer {
+    color: white;
+    justify-self: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.homepage nav ul li:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.gallery nav ul li:nth-child(2) {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.si339 nav ul li:nth-child(3) {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.eecs183 nav ul li:last-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+iframe {
+    height: 500px;
+    width: 100%;
+    object-fit: fill;
+}
+
+.flip-card {
+    justify-self: center;
+    background-color: #dfd5c5;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    grid-column: 1/-1;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    grid-column: 1/-1;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    color: black;
+    grid-column: 1/-1;
+    grid-row: inherit;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: orange;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+@media only screen and (min-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 2fr 1fr;
+        row-gap: 15px;
+        background: black;
+    }
+
+
+    nav {
+        grid-row: 2;
+        grid-column: 2;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        font-size: 100%;
+        padding-top: 50px;
+
+    }
+
+    .description {
+        grid-row: 1;
+        grid-column: 1/-1;
+        height: fit-content;
+    }
+
+    .content {
+        display: grid;
+        background: #bdaf95;
+        grid-column: 1/span 1;
+        grid-row: 2/-1;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 10px;
+    }
+
+    .gallery .content {
+        display: inline-block;
+    }
+
+    section {
+        display: grid;
+        padding-bottom: 40px;
+        background: #dfd5c5;
+        margin: 10px;
+        padding: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+        justify-content: flex-start;
+    }
+
+    section img {
+        width: 100px;
+        height: 150px;
+        grid-column: 1/1;
+        grid-row: 1;
+        border: 8px solid rgb(250, 208, 68);
+        margin: 5px;
+        justify-self: center;
+    }
+
+    .content-text {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        padding: 5px;
+        margin: 5px;
+        justify-content: start;
+    }
+
+    .eecs183 section:last-child {
+        grid-column: 1/-1;
+    }
+
+    section a {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+        grid-row: 1;
+        grid-column: 1/span 2;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    nav {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .description {
+        grid-row: 1;
+        grid-column: 1/-1;
+        height: fit-content;
+    }
+
+    .content {
+        grid-row: 2;
+        grid-column: 2;
+        width: 1fr;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        display: block;
+        height: fit-content;
+    }
+    .flip-card{height: auto;
+    width: 100%}
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        /* Hat tip Nick/cssremedy (https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/#comment-1700170) */
+        transition-duration: 0.001ms !important;
+    }
+}
